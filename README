@@ -1,0 +1,82 @@
+UDP Client-Server Communication
+
+
+Author
+Diego Narvaez 
+For the University of North Texas
+
+
+Acknowledgment to the CSCE 3530-400 course for providing the framework and guidance for this assignment.
+
+Project Overview
+    This project implements a basic UDP client-server model where the client sends "PING" messages to the server, and the server randomly decides to respond with "PONG" or drop the packet. The objective is to demonstrate network programming fundamentals using Python's socket programming capabilities.
+
+Features
+
+    UDP Socket Communication: Utilizes UDP sockets for lightweight, connectionless message sending and receiving.
+    Randomized Response: The server randomly responds to "PING" messages, simulating network unreliability where some packets are dropped.
+
+    Timeout Handling: The client has a timeout feature to handle cases where the server's response isn't received within the expected timeframe.
+
+
+Prerequisites
+
+Python 3.6 or higher
+
+
+Installation
+
+        1. Clone the repository or download the source code:
+
+            git clone https://your-repository-link-here
+            cd path-to-project-folder
+
+
+        2. No external libraries are required for this project. The Python Standard Library provides all necessary modules.
+
+
+
+Usage
+
+    Running the Server
+
+    To start the server, navigate to the project directory and run:
+
+    python3 server.py [hostname] [port]
+
+        hostname (optional): Specify the hostname to bind the server to. Defaults to the system's hostname if not provided.
+
+        port (optional): Specify the port to listen on. Defaults to 8008 if not provided.
+
+
+
+Running the Client
+    To start the client, open another terminal and run:
+
+    python3 client.py [hostname] [port]
+        hostname (required): Specify the hostname of the server.
+        port (required): Specify the port of the server.
+
+
+
+Example
+    Run the server:
+
+        python3 server.py localhost 8008
+
+
+
+    Run the client:
+
+        python3 client.py localhost 8008
+
+
+
+Output
+    The client will print the outcome of each "PING" sent, either receiving a "PONG" or noting a timeout. The server will log each received "PING" and whether it sent a "PONG" or dropped the packet.
+
+
+Authors
+Diego Narvaez - Initial work - University of North Texas
+Acknowledgments
+Thanks to the CSCE 3530-400 course staff for providing the framework and guidance for this assignment.
