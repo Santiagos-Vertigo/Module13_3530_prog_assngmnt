@@ -1,10 +1,9 @@
 UDP Client-Server Communication
 
+For the University of North Texas 
 
 Author
 Diego Narvaez 
-For the University of North Texas
-
 
 Acknowledgment to the CSCE 3530-400 course for providing the framework and guidance for this assignment.
 
@@ -21,14 +20,15 @@ Features
 
 Prerequisites
 
-Python 3.6 or higher
+    Python 3.6 or higher
 
 
 Installation
 
         1. Clone the repository or download the source code:
-
-            git clone https://your-repository-link-here
+        
+            https://github.com/Santiagos-Vertigo/Module13_3530_prog_assngmnt.git
+            
             cd path-to-project-folder
 
 
@@ -74,9 +74,3 @@ Example
 
 Output
     The client will print the outcome of each "PING" sent, either receiving a "PONG" or noting a timeout. The server will log each received "PING" and whether it sent a "PONG" or dropped the packet.
-
-
-Authors
-Diego Narvaez - Initial work - University of North Texas
-Acknowledgments
-Thanks to the CSCE 3530-400 course staff for providing the framework and guidance for this assignment.

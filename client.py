@@ -7,7 +7,6 @@ def main():
 
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-    # Set a timeout of 1 second for receiving a response
     client_socket.settimeout(1)
 
     for i in range(1, 11):

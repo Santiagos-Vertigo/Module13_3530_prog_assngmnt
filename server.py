@@ -17,8 +17,6 @@ def main():
     # print(f"\nEUID: 11512562 / dn0240")
     # print(f"\n[server] : ready to accept data on {host}:{port}\n")
     
-    
-    
     print("\nUNIVERSITY OF NORTH TEXAS\n")
           
           
@@ -33,7 +31,7 @@ def main():
     
 
     while True:
-        data, addr = server_socket.recvfrom(1024)  # Buffer size is 1024 bytes
+        data, addr = server_socket.recvfrom(1024) 
         message = data.decode()
         print(f"[client] : {message}")
 
